@@ -174,6 +174,7 @@ resource "aws_ebs_volume" "broker_volume" {
   count = "${var.broker_count}"
   availability_zone = "${element(data.aws_availability_zones.available.names,count.index)}"
   size = "${var.broker_volume_size}"
+  type = "${var.broker_volume_type}"
   tags {
     Name = "${var.owner}-broker${count.index}-disk"
     Owner = "${var.owner}"

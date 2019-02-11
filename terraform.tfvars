@@ -8,6 +8,7 @@ ec2_public_key_name = "liko-east-2.pem"
 broker_count = "1"
 broker_instance_type = "r5.xlarge"
 broker_volume_size = "30"
+broker_volume_type = "sc1"
 broker_associate_public_ip_address = "true"
 #broker_vpc_security_group_ids = ["sg-2dfb9147","sg-0e662467","sg-d450a6bd"]
 #worker_vpc_security_group_ids = ["sg-2dfb9147","sg-0e662467","sg-d450a6bd"]
