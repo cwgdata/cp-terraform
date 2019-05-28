@@ -30,22 +30,22 @@ variable "aws_amis" {
 }
 
 variable "cluster_name" {
-  default = "CP-Cluster"
+  default = "Cliff Replicator Benchmark"
 }
 
 variable "owner" {}
 
 variable "prefix" {
-	default = "confluent-platform"
+	default = "cliff-bench"
 }
 
 # Broker variables
 variable "broker_count" {
-  default = "3"
+  default = "10"
 }
 
 variable "broker_instance_type" {
-  default = "t2.xlarge"
+  default = "m5.xlarge"
 }
 
 variable "broker_tags" {
@@ -54,11 +54,11 @@ variable "broker_tags" {
 }
 
 variable "broker_volume_size" {
-  default = "16"
+  default = "100"
 }
 
 variable "broker_volume_type" {
-  default = "standard"
+  default = "sc1"
 }
 
 variable "broker_volume_device_name" {
@@ -83,11 +83,11 @@ variable "broker_kafka_data_dir" {
 
 # Worker variables
 variable "worker_count" {
-  default = "2"
+  default = "4"
 }
 
 variable "worker_instance_type" {
-  default = "t2.xlarge"
+  default = "c5.4xlarge"
 }
 
 variable "ec2_public_key_name" {}
